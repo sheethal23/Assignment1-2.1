@@ -1,0 +1,56 @@
+<!--ZID    :Z1853460
+	NAME   :SHEETHAL YELLISETTY
+	COURSE :OMIS694-->
+<html>
+   <head>
+   </head>
+   <body>
+		<title>Application</title>
+		<script>
+				function rectangle()
+				{
+				var length=prompt("Enter the length: ");
+				var width=prompt("Enter the breadth: ");
+				var length=parseInt(length);
+				var width=parseInt(width);
+				var area=length*width;
+				var perimeter=2*(length+width);
+				area=parseInt(area);
+				perimeter=parseInt(perimeter);
+				document.write("width= "+width+"<br>");
+				document.write("length= "+length+"<br>");
+				document.write("Area of rectangle = "+area+"<br>");
+				document.write("Perimeter of rectangle = "+perimeter+"<br>");
+				}
+				function square()
+				{
+				var side=prompt("Enter side: ");
+				var side=parseInt(side);
+				var area=side*side;
+				var perimeter=4*(side);
+				area=parseInt(area);
+				perimeter=parseInt(perimeter);
+				document.write("Side= "+side+"<br>");
+				document.write("Area of Square = "+area+"<br>");
+				document.write("Perimeter of Square = "+perimeter+"<br>");
+				}
+				function Circle()
+				{
+				var radius=parseInt(prompt("Enter radius: "));
+				const pi = 3.14;
+				perimeter=2*pi*radius;
+				area = 4*pi*radius*radius;
+				area=parseInt(area);
+				perimeter=parseInt(perimeter);
+				document.write("Radius = "+radius+"<br>");
+				document.write("Area of Circle = "+area+"<br>");
+				document.write("Perimeter of Circle = "+perimeter+"<br>");
+				}
+		</script>
+   
+            <h1>Choose a shape</h1>
+				<input type="button" value="Square"  onclick="square()"/> 
+				<input type="button" value="Rectangle" onclick="rectangle()"/> 
+				<input type="button" value="Circle" onclick="Circle()"/> 
+		  </body>
+</html>
